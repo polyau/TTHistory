@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>История настольного тенниса</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  <style type="text/css">
+    .mystyle {color: magenta; font-family: "Verdana"}
+    .defstyle {color: black; font-family: "Georgia"}
+
+    .table-style1 {
+      background-color: white;
+      color: black;
+      font-family: Arial, sans-serif;
+    }
+    .table-style2 {
+      background-color: white;
+      color: blueviolet;
+      font-family: Verdana, sans-serif;
+    }
+    .table-style1-alt {
+      background-color: black;
+      color: white;
+    }
+    .table-style2-alt {
+      background-color: gray;
+      color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+&nbsp;<div class="text">
+    <main>
+      <h1>История инвентаря</h1>
+        <p p class="defstyle" onMouseOver="this.className='mystyle'" onMouseOut="this.className='defstyle'">Инвентарь в настольном теннисе играет очень важную роль. Всю историю развития настольного тенниса активно развивается и инвентарь для него: основания, накладки, клеи для ракеток, мячи, столы и многое другое. </p>
+        <p>Инвентарь спортсменов нужно контролировать и регулировать его использование правилами, чем занимается International Table Tennis Federation. Ниже представлена хронология развития инвентаря и изменений правил в связи с ним. </p>
+        <script type="text/javascript">
+          const secondParagraph = document.querySelectorAll("p")[1];
+          function changeParagraphStyle() {
+            secondParagraph.style.paddingRight = "3cm";
+            secondParagraph.style.textIndent = "2.5cm";
+          }
+          function resetParagraphStyle() {
+            secondParagraph.style.paddingRight = "";
+            secondParagraph.style.textIndent = "";
+          }
+          secondParagraph.addEventListener("mouseover", changeParagraphStyle);
+          secondParagraph.addEventListener("mouseout", resetParagraphStyle);
+        </script>
+
+        </details>&nbsp;<h2>Хронология изменений инвентаря</h2>
+          <p class="news"><span class="date">05.01.1885 - </span>Создан первый стол для настольного тенниса</p>
+          <p class="news"><span class="date">Начало ХХ века - </span>Целлулоидные мячи вытесняют пробковые и каучуковые</p>
+          <p class="news"><span class="date">04.11.1952 - </span>Создание губчатой накладки</p>
+          <p class="news"><span class="date">01.09.1959 - </span>Двухслойные накладки официально разрешены ITTF</p>
+          <p class="news"><span class="date">2000 год - </span>Диаметр мяча изменился с 38 мм до 40 мм</p>
+          <p class="news"><span class="date">06.02.2014 - </span>ITTF сообщила о принятии мяча из пластмассы вместо целлулоидного</p>
+          <p class="news"><span class="date">01.07.2014 - </span>ITTF обязала использовать пластмассовые мячи на мировых соревнованиях</p>
+          <p class="news"><span class="date">03.02.2021 - </span>ITTF допустила использование накладок дополнительных цветов</p>
+
+      <table>
+        <tr>
+          <th class="table-style1">Ячейка 1</th>
+          <th class="table-style2">Ячейка 2</th>
+        </tr>
+        <tr>
+          <td class="table-style1">Ячейка 3</td>
+          <td class="table-style2">Ячейка 4</td>
+        </tr>
+      </table>
+
+<div>
+  <img src="giphy.gif" name="giphy" style="position: absolute; top: 500px; left: 10px; z-index: 0;">
+  <img src="picture.gif" name="picture" style="position: absolute; top: 450px; left: 100px; z-index: 1;">
+  <img src="travel.gif" name="travel" style="position: absolute; top: 500px; left: 200px; z-index: 2;">
+</div>
+<div style="position: absolute; top: 830px; left: 10px;">
+  <button onclick="document.getElementsByName('picture')[0].style.visibility = 'hidden'">Hide middle image</button>
+  <button onclick="document.getElementsByName('picture')[0].style.visibility = 'visible'">Show middle image</button>
+  <button onclick="swapLayers()"style="top: 800px">Swap layers</button>
+</div>
+
+<script>
+function swapLayers() {
+  var image1 = document.getElementsByName('giphy')[0];
+  var image3 = document.getElementsByName('travel')[0];
+  
+  var tempZIndex = image1.style.zIndex;
+  giphy.style.zIndex = travel.style.zIndex;
+  travel.style.zIndex = tempZIndex;
+}
+</script>
+
+    </main>
+  </div> 
+
+    <script type="text/javascript">
+    const cells = document.querySelectorAll("td, th");
+    
+    cells.forEach((cell) => {
+      const originalClasses = cell.className;
+      
+      cell.addEventListener("mouseover", () => {
+        cell.className += "-alt";
+      });
+      
+      cell.addEventListener("mouseout", () => {
+        cell.className = originalClasses;
+      });
+    });
+  </script>
+
+<div class= "navig"> 
+  <form name="buttons">
+    <input type="button" value="Window" onClick=""
+    style=" height: 35px;
+            width: 70px;
+    ">
+
+    <input type="button" value="Navigator" onClick="showNavigatorInfo()"
+    style=" height: 35px; 
+            width: 70px;
+    ">
+    <script type="text/javascript">
+      function showNavigatorInfo() {
+        document.write("Браузер: " + navigator.appName + "<br> Версия: " + navigator.appVersion);}
+    </script>
+
+    <input type="button" value="Location" onClick="showLocationInfo()"
+    style=" height: 35px;
+            width: 70px;
+    ">
+    <script type="text/javascript">
+      function showLocationInfo() {
+        var username = prompt("Введите ваше имя:");
+        var locationInfo = "Имя пользователя: " + username + "\nАдрес загруженного документа: " + location.href;
+        alert(locationInfo); }
+    </script>
+
+    <input type="button" value="Screen" onClick="showScreenInfo()"
+    style=" height: 35px;
+            width: 70px;
+    ">
+    <script type="text/javascript">
+      function showScreenInfo() {
+        var screenInfo = "Ширина экрана: " + screen.width + "\nВысота экрана: " + screen.height + "\nГлубина цвета: " + screen.colorDepth;
+        var confirmation = confirm(screenInfo);
+        if (confirmation) {
+          alert(screenInfo); }
+      }
+    </script>
+  </form>
+</div>
+ <script type="text/javascript">
+document.write(document.lastModified);
+</script>
+</body>
+</html>
